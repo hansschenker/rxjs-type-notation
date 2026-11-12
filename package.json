@@ -4,12 +4,26 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "vitepress dev docs",
+    "build": "npm run typecheck && vitepress build docs",
+    "preview": "vitepress preview docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "typecheck": "tsc -p tsconfig.examples.json",
+    "app:dev": "vite",
+    "app:build": "tsc && vite build",
+    "app:preview": "vite preview"
   },
   "devDependencies": {
+    "rxjs": "7.8.2",
     "typescript": "~7.0.2",
-    "vite": "^8.3.6"
+    "vite": "^8.3.6",
+    "vitepress": "1.6.4",
+    "vue": "3.5.30"
+  },
+  "description": "Haskell-inspired succinct type notation for RxJS, with VitePress documentation",
+  "engines": {
+    "node": ">=24"
   }
 }
