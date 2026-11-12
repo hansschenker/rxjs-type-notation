@@ -16,7 +16,7 @@ hero:
 
 features:
   - title: See what connects
-    details: Read an operator as configuration, an input stream, and an output stream. T* stands for Observable<T>.
+    details: Read an operator as configuration, an input stream, and an output stream. T* stands for Observable&lt;T&gt;.
     link: /guide/reading-signatures
   - title: Keep behavior explicit
     details: The same type can support overlap, queuing, cancellation, or ignoring new values. Read the policy alongside the signature.
